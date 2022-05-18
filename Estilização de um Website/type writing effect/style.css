@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+.typewriter h1 {
+    overflow: hidden; /* confirma que o texto não apareça até o efeito aparecer */
+    border-right: .15em solid orange; /* cursor */
+    white-space: nowrap; /* mantém conteúdo na mesma linha */
+    margin: 0 auto; /* scrolling effect as the typing happens */
+    letter-spacing: .15em; /* ajuste do espaço das letras */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  .typewriter h1 img{
+    align-items: center;
+    height: 45px;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }

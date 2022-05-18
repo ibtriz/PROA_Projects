@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap");
+
+/*
+    Fonte
+  font-family: 'Manrope', sans-serif;
+*/
+
+:root {
+  --backgrond: rgb(09, 09, 14);
+  --text-color: #e1e1e6;
+  --button: #8257e5;
+  --border: #29292e;
+  --border-menu-mobile: #a8a8b3;
+  --text-color-menu-mobile: #e1e1e6;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--backgrond);
+  font-family: "Manrope", sans-serif;
+}
+.nav {
+  margin-top: 2rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lista-nav {
+  display: flex;
+  gap: 2rem;
+  width: 450px;
+}
+
+.lista-nav li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  transition: 200ms ease-in-out;
+}
+
+.lista-nav li a:hover {
+  color: var(--button);
+}
+
+.lista-nav li {
+  transition: 200ms ease-in-out;
+  margin-left: 0.3rem;
+}
+.logo.mobile {
+  display: none;
+}
+.lista-nav li:hover {
+  transform: scale(1.15);
+}
+
+.btn-pegar-cafe {
+  width: 172px;
+  height: 37px;
+  background-color: transparent;
+  border: 1px solid var(--button);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.btn-pegar-cafe:hover {
+  color: var(--button);
+}
+
+.btn-pegar-cafe.main {
+  display: none;
+}
+
+.great-coffee {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.main {
+  margin-top: 3rem;
+}
+.great-coffee h1 {
+  color: var(--text-color);
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.great-coffee span {
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.great-coffee .texto-mobile {
+  display: none;
+}
+
+.coffee-img {
+  display: flex;
+  justify-content: center;
+}
+.coffee-img .coffee {
+  width: 50%;
+}
+.great-engolabado {
+  position: relative;
+}
+
+.blur {
+  display: flex;
+  z-index: -999;
+}
+.blur.mobile {
+  position: absolute;
+  display: none;
+}
+.blur.baixo {
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
+  left: -400px;
+}
+
+.blur.alto {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+}
+
+.burguer {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .coffee-img .coffee {
+    margin-top: -90px;
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .coffee-img .coffee {
+    margin-top: -50px;
+    width: 60%;
+  }
+}
+@media (max-width: 960px) {
+  .nav.open {
+    position: relative;
+  }
+  .btn-pegar-cafe {
+    display: none;
+  }
+  .btn-pegar-cafe.main {
+    display: block;
+  }
+  .burguer {
+    display: block;
+  }
+  .btn-menu.close {
+    display: none;
+  }
+  .great-coffee h1 {
+    display: none;
+  }
+  .great-coffee span {
+    display: none;
+  }
+
+  .great-coffee .texto-mobile {
+    font-size: 30px;
+    color: var(--text-color-menu-mobile);
+    text-shadow: none;
+    display: block;
+    width: 300px;
+    text-align: center;
+  }
+  .blur.alto {
+    display: none;
+  }
+  .blur.baixo {
+    display: none;
+  }
+  .blur.mobile {
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .coffee-img .coffee {
+    width: 60%;
+  }
+  .btn-menu {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .logo.desktop {
+    display: none;
+  }
+  .logo.mobile {
+    display: block;
+  }
+  .navbar.items {
+    padding-bottom: 0.8rem;
+    justify-content: space-around;
+    gap: 4rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .lista-nav {
+    flex-direction: column;
+  }
+  .lista-nav.close {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    gap: 0px;
+  }
+  .lista-nav.invisible {
+    display: none;
+  }
+  .lista-nav li a{
+    font-size: 18px;
+
+  }
+  .lista-nav li {
+    padding: 10px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .lista-nav .home {
+    border-left: 4px solid var(--button);
+  }
+  .lista-nav li:hover {
+    transform: none;
+  }
+  .nav.open {
+    background-color: var(--backgrond);
+    z-index: 1;
+    height: 100vh;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .coffee-img .coffee {
+    width: calc(80% - 5vw);
+  }
+  .nav {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 420px) {
+  .coffee-img .coffee {
+    width: 100%;
+  }
+  .nav {
+    margin-bottom: 4rem;
+  }
+}
+  
