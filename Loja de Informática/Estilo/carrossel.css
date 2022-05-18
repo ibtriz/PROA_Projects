@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrossel {
+    width: 810px;
+    height: 349px;
+    margin: 50px auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0);
+}
+
+.carrossel ul {
+    display: flex;
+    list-style: none;
+    width: 1630px;
+    height: 349px;
+}
+
+.carrossel li {
+    position: relative;
+    left: -810px;
+    animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+    20% {
+        left: 0px;
+    }
+    30% {
+        left: -810px
+    }
+    50% {
+        left: -810px;
+    }
+    60% {
+        left: -1620px;
+    }
+    90% {
+        left: -1620px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.item {
+    padding: 10px 0px 0px 0px
+}

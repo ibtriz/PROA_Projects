@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Beatriz Francelino Borges Carneiro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar parágrafo JavaScript no Body</title>
+</head>
+
+<body>
+    <h2>Trocar parágrafo JavaScript no Body</h2>
+    <p id="paragrafo">Parágrafo</p>
+    <button type="button" onclick="myFunction()">Clique aqui</button>
+    <script>
+        function myFunction() {
+            document.getElementById("paragrafo").innerHTML = "PARÁGRAFO MUDADO";
+        }
+    </script>
+</body>
+
+</html>

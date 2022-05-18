@@ -1,0 +1,81 @@
+        body {
+            background-color: #F2F2F2;
+            font-family: "Times New Roman";
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+            text-indent: 50px;
+        }
+        
+        div {
+            width: 433px;
+            height: 288px;
+            margin: auto;
+        }
+        
+        a {
+            color: #4C5059;
+            font-weight: bolder;
+            text-decoration: none !important;
+            font-size: 20px;
+            font-family: "Times New Roman";
+            text-decoration: underline #4C5059;
+            ;
+        }
+        
+        a:hover {
+            text-shadow: 0 0 4px #9FA3A6, 0 0 4px #9FA3A6;
+            text-decoration: underline;
+        }
+        
+        h1 {
+            color: #4C5059;
+            text-align: center;
+            font-family: "Times New Roman";
+            font-size: 60px;
+            border-style: inset;
+            border-color: #9FA3A6;
+            text-transform: uppercase;
+            border-radius: 45px;
+        }
+        
+        h1:hover {
+            text-shadow: 0px 0px 4px #9FA3A6, 0px 0px 4px #9FA3A6;
+        }
+        
+        h2 {
+            font-size: 40px;
+        }
+        
+        p {
+            font-family: "Times New Roman";
+            font-size: 20px;
+            color: #4C5059;
+        }
+        
+        img {
+            border-radius: 45px;
+            padding: 20px;
+            position: relative;
+            top: 0;
+            width: 433px;
+            height: 288px;
+            margin: auto;
+            display: block;
+            -webkit-transition: -webkit-transform .5s ease;
+            transition: .5s ease;
+            overflow: hidden;
+        }
+        
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            -webkit-transition: -webkit-transform .5s ease;
+            transition: .5s ease;
+        }
+        
+        .img-container:hover img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }

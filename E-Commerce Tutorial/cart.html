@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Celulares</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__hamburger">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </div>
+
+                    <div class="nav__logo">
+                        <a href="/" class="scroll-link">
+                            CELULARES
+                        </a>
+                    </div>
+
+                    <div class="nav__menu">
+                        <div class="menu__top">
+                            <span class="nav__category">CELULARES</span>
+                            <a href="#" class="close__toggle">
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="/" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Produtos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Blog</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Contatos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__icons">
+                        <a href="#" class="icon__item">
+                            <svg class="icon__user">
+                                <use xlink:href="./images/sprite.svg#icon-user"></use>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <svg class="icon__search">
+                                <use xlink:href="./images/sprite.svg#icon-search"></use>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="icon__item">
+                            <svg class="icon__cart">
+                                <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                            </svg>
+                            <span id="cart__total">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="page__title-area">
+            <div class="container">
+                <div class="page__title-container">
+                    <ul class="page__titles">
+                        <li>
+                            <a href="/">
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-home"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="page__title">Carrinho</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section cart__area">
+            <div class="container">
+                <div class="responsive__cart-area">
+                    <form class="cart__form">
+                        <div class="cart__table table-responsive">
+                            <table width="100%" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>PRODUTO</th>
+                                        <th>NOME</th>
+                                        <th>PREÇO</th>
+                                        <th>QUANTIDADE</th>
+                                        <th>TOTAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/iPhone/iphone6.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>Branco</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">R$ 4.000,00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">R$ 4.000,00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/sumsung/samsung5.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>Branco</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">R$ 4.000,00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">R$ 4.000,00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/sumsung/samsung2.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>Branco</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">R$ 4.000,00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">R$ 4.000,00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="#">
+                                                <img src="./images/products/iPhone/iphone4.jpeg" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="#">Apple iPhone 11</a>
+                                            <br><br>
+                                            <small>Branco</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">R$ 4.000,00</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-minus"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <svg>
+                                                            <use xlink:href="./images/sprite.svg#icon-plus"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">R$ 4.000,00</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <svg>
+                                                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="cart-btns">
+                            <div class="continue__shopping">
+                                <a href="/">Continuar minha compra</a>
+                            </div>
+                            <div class="check__shipping">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+
+                        <div class="cart__totals">
+                            <h3>TOTAL</h3>
+                            <ul>
+                                <li>
+                                    SUBTOTAL
+                                    <span class="new__price">R$ 4.000,00</span>
+                                </li>
+                                <li>
+                                    Shipping
+                                    <span>R$0</span>
+                                </li>
+                                <li>
+                                    Total
+                                    <span class="new__price">R$ 4.000,00</span>
+                                </li>
+                            </ul>
+                            <a href="">Proceder a compra</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="facility__section section" id="facility">
+            <div class="container">
+                <div class="facility__contianer">
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-airplane"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-credit-card-alt"></use>
+                            </svg>
+                        </div>
+                        <p>100% GARANTIDO</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-credit-card"></use>
+                            </svg>
+                        </div>
+                        <p>DIVERSAS FORMAS DE PAGAMENTO</p>
+                    </div>
+
+                    <div class="facility__box">
+                        <div class="facility-img__container">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-headphones"></use>
+                            </svg>
+                        </div>
+                        <p>ATENDIMENTO ONLINE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ 
+    <footer id="footer" class="section footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer-top__box">
+              <h3>EXTRAS</h3>
+              <a href="#">Nossas marcas</a>
+              <a href="#">Presentes</a>
+              <a href="#">Afiliações</a>
+              <a href="#">Especial</a>
+              <a href="#">Site Map</a>
+            </div>
+            <div class="footer-top__box">
+              <h3>INFORMAÇÕES</h3>
+              <a href="#">Sobre nós</a>
+              <a href="#">Política de privacidade</a>
+              <a href="#">Termos e condições</a>
+              <a href="#">Contate-nos</a>
+              <a href="#">Site MAP</a>
+            </div>
+            <div class="footer-top__box">
+              <h3>Minha conta</h3>
+              <a href="#">Minha conta</a>
+              <a href="#">Meus pedidos</a>
+              <a href="#">Wish List</a>
+              <a href="#">Novidades</a>
+              <a href="#">Retornos</a>
+            </div>
+            <div class="footer-top__box">
+              <h3>Contate-nos</h3>
+              <div>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-location"></use>
+                  </svg>
+                </span>
+                RUA lala, 55, bairro, cidade, estado
+              </div>
+              <div>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-envelop"></use>
+                  </svg>
+                </span>
+                celulares@gmail.com
+              </div>
+              <div>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </span>
+                (11)1111-1111
+              </div>
+              <div>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
+                  </svg>
+                </span>
+                Lorem ipsum dolor sit amet consectetur
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer-bottom__box">
+    
+          </div>
+          <div class="footer-bottom__box">
+    
+          </div>
+        </div>
+        </div>
+      </footer>
+    
+    
+    
+      <div class="popup hide__popup">
+        <div class="popup__content">
+          <div class="popup__close">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </div>
+          <div class="popup__left">
+            <div class="popup-img__container">
+              <img class="popup__img" src="./images/popup.jpg" alt="popup">
+            </div>
+          </div>
+          <div class="popup__right">
+            <div class="right__content">
+              <h1>Desconto <span>30%</span> Off</h1>
+              <p>Receba 30% de desconto e receba nossas novidades!
+              </p>
+              <form action="#">
+                <input type="email" placeholder="Enter your email..." class="popup__form">
+                <a href="#">Quero saber as novidades</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <a href="#header" class="goto-top scroll-link">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+        </svg>
+      </a>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    
+      <script src="./js/products.js"></script>
+      <script src="./js/index.js"></script>
+      <script src="./js/slider.js"></script>
+    
+    </body>
+    
+    </html>

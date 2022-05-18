@@ -1,0 +1,20 @@
+Algoritmo "exercicio"
+//
+//
+// Disciplina : [Lógica de Programação e JavaScript]
+// Professor : Jailson Costa dos Santos
+// Descrição : 
+//
+//
+//
+//
+// Autor(a) : Beatriz Francelino Borges Carneiro
+// Data atual :0/09/2021
+Var
+// Seção de Declarações das variáveis 
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+
+
+Fimalgoritmo
