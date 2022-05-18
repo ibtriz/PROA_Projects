@@ -1,0 +1,145 @@
+                                                    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+                                                    * {
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        box-sizing: border-box;
+                                                        font-family: 'Poppins', sans-serif;
+                                                    }
+                                                    
+                                                    body {
+                                                        min-height: 100%;
+                                                        max-height: 100%;
+                                                        background: linear-gradient(#400B0F, #590E2A, #731224);
+                                                    }
+                                                    
+                                                    header {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        width: 100%;
+                                                        padding: 30px 100px;
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: center;
+                                                        z-index: 10000;
+                                                    }
+                                                    
+                                                    header .logo {
+                                                        color: #F2F2F2;
+                                                        font-weight: 700;
+                                                        text-decoration: none;
+                                                        font-size: 2em;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 2px;
+                                                    }
+                                                    
+                                                    header ul {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                    }
+                                                    
+                                                    header ul li {
+                                                        list-style: none;
+                                                        margin-left: 20px;
+                                                    }
+                                                    
+                                                    header ul li a {
+                                                        text-decoration: none;
+                                                        padding: 6px 15px;
+                                                        color: #F2F2F2;
+                                                        border-radius: 20px;
+                                                    }
+                                                    
+                                                    header ul li a:hover,
+                                                    header ul li a.active {
+                                                        background-color: #F2F2F2;
+                                                        color: #0D0D0D;
+                                                    }
+                                                    
+                                                    section {
+                                                        position: relative;
+                                                        width: 100%;
+                                                        height: 100vh;
+                                                        padding: 100px;
+                                                    }
+                                                    
+                                                    section img {
+                                                        position: absolute;
+                                                        top: 10%;
+                                                        left: 0;
+                                                        width: 100%;
+                                                        height: fit-content;
+                                                        padding-left: 50%;
+                                                        z-index: 10;
+                                                    }
+                                                    
+                                                    .intro {
+                                                        position: relative;
+                                                        display: contents;
+                                                        top: 5;
+                                                        margin-right: 35%;
+                                                        margin-left: 5;
+                                                        height: 100%;
+                                                        width: 0;
+                                                        background-color: #F2F2F2;
+                                                    }
+                                                    
+                                                    .intro h2 {
+                                                        position: relative;
+                                                        color: #F2F2F2;
+                                                        font-size: 4.0vw;
+                                                        z-index: 9;
+                                                    }
+                                                    
+                                                    p {
+                                                        top: 5;
+                                                        margin-top: 5px;
+                                                        margin-left: 5px;
+                                                        margin-right: 30%;
+                                                        color: #FFB0A2;
+                                                    }
+                                                    
+                                                    .flip-card {
+                                                        background-color: transparent;
+                                                        width: 300px;
+                                                        height: 200px;
+                                                        perspective: 1000px;
+                                                        flex-basis: 25%;
+                                                        margin-top: 10%;
+                                                        display: inline-block;
+                                                        flex-wrap: wrap;
+                                                    }
+                                                    
+                                                    .flip-card-inner {
+                                                        position: absolute;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        text-align: center;
+                                                        transition: transform 0.8s;
+                                                        transform-style: preserve-3d;
+                                                    }
+                                                    
+                                                    .flip-card:hover .flip-card-inner {
+                                                        transform: rotateY(180deg);
+                                                    }
+                                                    
+                                                    .flip-card-front,
+                                                    .flip-card-back {
+                                                        position: absolute;
+                                                        width: 300px;
+                                                        height: 400px;
+                                                        -webkit-backface-visibility: hidden;
+                                                        backface-visibility: hidden;
+                                                    }
+                                                    
+                                                    .flip-card-front {
+                                                        background-color: #bbb;
+                                                        color: #40100C;
+                                                    }
+                                                    
+                                                    .flip-card-back {
+                                                        background-color: #730E0E;
+                                                        color: #FFB0A2;
+                                                        transform: rotateY(180deg);
+                                                    }
