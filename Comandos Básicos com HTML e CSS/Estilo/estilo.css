@@ -1,0 +1,53 @@
+h1 {
+    color: blue;
+    /* Utilizado para selecionar o máximo utilizado na linha ou página */
+    max-width: max-content;
+    background-color: #CCCCCC;
+}
+
+#p01 {
+    color: greenyellow;
+    border: 3px outset rgb(179, 111, 243);
+}
+
+#p02 {
+    color: red;
+}
+
+.paragrafodiferenciado {
+    color: darkmagenta;
+}
+
+img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    /* comentário*/
+}
+
+
+/* SCRIPT */
+
+#botao01 {
+    background-color: rgb(157, 196, 248);
+    border: 2px solid rgb(26, 26, 226);
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+/* TABELA */
+
+table,
+tr,
+td,
+th {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}

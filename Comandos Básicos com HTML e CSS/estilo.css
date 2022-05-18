@@ -1,0 +1,372 @@
+/* RESET */
+
+* {
+    margin: 0;
+    /* mergem */
+    padding: 0;
+    /* Espaçamento interno */
+    font-size: 100%;
+    /* tamanho da fonte */
+    font-family: 'Open Sans', sans-serif;
+    /* fonte dos textos */
+    font-weight: normal;
+    /* largura das letras */
+    box-sizing: border-box;
+    /* tamanho da caixa */
+    border: none;
+    /* borda */
+    outline: none;
+    /* linha de fundo */
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #777;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+    float: left;
+    padding: 50px 8%;
+    background-color: #07c7ad;
+}
+
+.logo a {
+    width: 84px;
+    height: 150px;
+    float: left;
+    background-image: url(../imagem/logo\ sem\ fundo.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.cabecalho form {
+    width: 30%;
+    float: right;
+}
+
+.cabecalho input[type="text"] {
+    width: 85%;
+    float: left;
+    padding: 15px 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.cabecalho button {
+    width: 15%;
+    float: right;
+    padding: 15px 10px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    background: linear-gradient(to left, #0ba38f, rgb(240, 238, 238));
+    color: rgb(22, 112, 105);
+}
+
+
+/* MENU */
+
+.menu {
+    width: 100%;
+    float: right;
+    background-color: rgb(0, 0, 0);
+    padding: 18px 8%;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    color: rgb(182, 179, 179);
+    margin-right: 25px;
+}
+
+.menu li a:hover {
+    color: #FFF;
+    font-size: 1.05em;
+}
+
+.social-icons {
+    float: right;
+}
+
+.social-icons a {
+    color: #FFF;
+    float: left;
+    margin-left: 20px;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-google:hover {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-youtube:hover {
+    color: #c4302b;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+
+/* PRINCIPAL */
+
+.principal {
+    width: 100%;
+    float: left;
+    padding: 16px 8%;
+}
+
+.sobre {
+    width: 70%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.sobre h2 {
+    margin-bottom: 15px;
+}
+
+.sobre img {
+    width: 50%;
+    float: left;
+    border-radius: 6px;
+    margin: 0 15px 15px 0;
+}
+
+.sobre p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+
+/* ONDE ESTAMOS */
+
+.onde-estamos {
+    width: 30%;
+    float: right;
+    padding: 10px 20px;
+    background-color: #CCC;
+    border-radius: 11px;
+    margin-bottom: 5px;
+}
+
+.onde-estamos h2,
+p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.onde-estamos iframe {
+    width: 100%;
+    height: 210px;
+    margin: 13px 0;
+}
+
+.onde-estamos li {
+    margin-bottom: 6px;
+    color: #0b7769;
+}
+
+.onde-estamos li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* NEWSLETTER */
+
+.news-letter {
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 50px 8%;
+}
+
+.news-letter h3 {
+    font-size: 1.8em;
+    color: white;
+}
+
+.news-letter p {
+    text-align: left;
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+.news-letter form {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.news-letter form input {
+    width: 40%;
+    margin-right: 1%;
+    padding: 15px 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: initial;
+}
+
+.news-letter button {
+    width: 17%;
+    background-color: #FFF;
+    padding: 15px 10px;
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* RODAPÉ */
+
+.rodape {
+    width: 100%;
+    float: left;
+    background-color: #07c7ad;
+    padding: 25px 8%;
+}
+
+.rodape p {
+    color: black;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 320px) {
+    .logo a {
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .cabecalho {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .cabecalho form {
+        width: 100%;
+    }
+    .cabecalho input,
+    .cabecalho button {
+        margin-top: 10px;
+    }
+    .menu {
+        width: 100%;
+        font-size: 15px;
+        padding: 0;
+    }
+    .social-icons {
+        width: 100%;
+        display: block;
+        margin-left: 16px;
+    }
+    .social-icons i {
+        margin-left: 20px;
+    }
+    .sobre img {
+        width: 100%;
+    }
+    .sobre {
+        width: 100%;
+        padding-right: 0;
+    }
+    .onde-estamos {
+        width: 100%;
+    }
+    .principal {
+        padding: 10;
+    }
+    .news-letter form input,
+    .news-letter form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cabecalho form {
+        width: 60%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu a {
+        padding-left: 15px;
+    }
+    .social-icons {
+        width: 100%;
+        margin-top: 15px;
+        display: block;
+    }
+    .social-icons i {
+        padding-left: 15px;
+    }
+    .sobre {
+        width: 100%;
+    }
+    .sobre img {
+        width: 100%;
+    }
+    .onde-estamos {
+        width: 100%;
+    }
+    .news-letter {
+        padding: 20px;
+    }
+    .news-letter form {
+        width: 100%;
+    }
+    .news-letter form input {
+        width: 48.5%;
+        margin-bottom: 10px;
+    }
+    .news-letter form button {
+        width: 100%;
+    }
+}
