@@ -18,6 +18,7 @@ Aqui estão todos os projetos realizados durante o PROPROFISSÃO 4.0 no Institut
 - [Lógica com Javascript](https://github.com/ibtriz/PROA-Projetos/tree/main/L%C3%B3gica%20com%20Javascript)
 - [Lógica com VisualG](https://github.com/ibtriz/PROA-Projetos/tree/main/L%C3%B3gica%20com%20VisualG)
 - [Jogo Da Memória](https://github.com/ibtriz/PROA-Projetos/tree/main/Jogo%20Da%20Mem%C3%B3ria)
+- [Cronômetro](https://github.com/ibtriz/PROA-Projetos/tree/main/Jogo%20Da%20Mem%C3%B3ria](https://github.com/ibtriz/PROA-Projetos/tree/main/cron%C3%B4metro))
 #### Link para os Projetos
 - [BMI Calculator](https://bmi-calculator-gamma.vercel.app/)
 - [Calculadora](https://calculadora-hazel-two.vercel.app/)
@@ -45,7 +46,7 @@ Aqui estão todos os projetos realizados durante o PROPROFISSÃO 4.0 no Institut
 
 ## Screenshots
 ![App Screenshot](/Calculadora/demonstra%C3%A7%C3%A3o-calculadora.gif)
-![App Screenshot](/Cron%C3%B4metro/img/demonstracao.gif)
+![App Screenshot](/Cron%C3%B4metro/img/demonstracao.gif](https://github.com/ibtriz/PROA-Projetos/blob/main/cron%C3%B4metro/img/demonstracao.gif)
 ![App Screenshot](/Estiliza%C3%A7%C3%A3o%20de%20um%20Website/Anima%C3%A7%C3%A3o%20x%C3%ADcara%20de%20ch%C3%A1%20quente/demonstra%C3%A7%C3%A3o-anima%C3%A7%C3%A3o.gif)
 ![App Screenshot](/Estiliza%C3%A7%C3%A3o%20de%20um%20Website/borda%20animada/demonstra%C3%A7%C3%A3o.gif))
 ![App Screenshot](/BMI%20Calculator/Calculator-BMI.gif)
