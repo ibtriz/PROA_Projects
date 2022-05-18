@@ -53,5 +53,4 @@ Aqui estão todos os projetos realizados durante o PROPROFISSÃO 4.0 no Institut
 ![App Screenshot](/Rel%C3%B3gio%20Digital/img/demonstracao.gif)
 ![App Screenshot](/Website%20Cidades/img/demonstracao.gif)
 ![App Screenshot](/Website%20Pessoal/img/demonstracao01.gif)
-![Logo](placeholder.jpg)
 
